@@ -1,19 +1,29 @@
 import React from 'react';
 
-function Food({fav}) {
+function Status(props) {
     return (
-        <h1>I Like {fav}</h1>
+        <ul>
+            <li>Goal : 40</li>
+            <li>Assist : 20</li>
+        </ul>
+    )
+}
+
+function Player(props) {
+    return (
+        <div>
+            <h1>Player: {props.name}</h1>
+            <Status />
+        </div>
+   
     )
 }
 
 function App() {
     return (
         <div>
-            <h1>Foods</h1>
-            <Food fav="kimchi" />
-            <Food fav="ramen" />
-            <Food fav="bab" />
-            <Food fav="hotba" />
+            <h1>Football</h1>
+            <Player name="Messi" />
         </div>
     )
 }
