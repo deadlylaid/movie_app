@@ -1,4 +1,5 @@
 import React from 'react';
+import League from './league';
 
 function Status(props) {
     return (
@@ -22,6 +23,7 @@ function Player(props) {
 function App() {
     return (
         <div>
+            <League name='La Liga'/>
             <h1>Football</h1>
             <Player name="Messi" />
         </div>
